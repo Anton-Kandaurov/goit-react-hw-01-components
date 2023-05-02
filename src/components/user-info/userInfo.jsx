@@ -13,21 +13,23 @@ export const UserInfo = ({ username, tag, location, avatar, stats }) => {
       </div>
 
       <ul className={css.stats}>
-        <li >
-           <div className={css.stats_li}>
-          <span className={css.label}>Followers</span>
+        <li className={css.stats_li}>
+            <span className={css.label}>Followers</span>
+            <div >
           <span className={css.quantity}>{stats.followers}</span>
          </div>
         </li>
-        <li>
-          <div className={css.stats_li}>
-          <span className={css.label}>Views</span>
+        <li className={css.stats_li}>
+          
+            <span className={css.label}>Views</span>
+            <div>
           <span className={css.quantity}>{stats.views}</span>
           </div>
         </li>
-        <li>
-          <div className={css.stats_li}>
-          <span className={css.label}>Likes</span>
+        <li className={css.stats_li}>
+          
+            <span className={css.label}>Likes</span>
+            <div>
           <span className={css.quantity}> {stats.likes}</span>
           </div>
         </li>

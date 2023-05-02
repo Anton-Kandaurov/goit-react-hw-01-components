@@ -1,0 +1,53 @@
+.statistics{
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: whitesmoke;
+    border: 1px solid #333; 
+    margin-top: 35px;
+}
+
+.title{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.19;
+    text-align: center;
+    color: #555;
+    margin: 0;
+    padding: 20px;
+}
+
+.statlist{
+    display: flex;
+    border: 1px solid #000;
+    margin: 0;
+    padding: 0;
+    background-color: greenyellow;
+}
+
+.item{
+    list-style-type: none;
+    width: 90px;
+    border: 1px solid;
+   
+}
+
+.label{
+font-weight: 500;
+font-size: 25px;
+line-height: 1.19;
+text-align: center;
+color: #333;
+margin: 0;
+padding: 20px;
+}
+
+.percentage{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.19;
+    text-align: center;
+    color: #555;
+    margin: 0;
+    padding: 20px;
+}

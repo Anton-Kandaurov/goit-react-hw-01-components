@@ -59,9 +59,12 @@
 .stats{
     list-style-type: none;
     display: flex;
-    padding-right: 5px;
-    padding-left: 5px;
     margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
 }
 
 .label{
@@ -71,11 +74,12 @@
     text-align: center;
     color: white;
     margin-bottom: 10px;
-    justify-content: space-around;
 }
 
 .stats_li{
     display: block;
+    align-items: center;
+    text-align: center;
 }
 
 .quantity{
@@ -86,4 +90,5 @@
     color: white;
     margin-bottom: 10px;
     justify-content: space-around;
+    text-align: center;
 }
