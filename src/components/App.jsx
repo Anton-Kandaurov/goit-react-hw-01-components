@@ -1,13 +1,13 @@
-import user from '../user.json';
-import { UserInfo } from './user-info/userInfo';
+import user from '../data/user.json';
+import { Profile } from './user-info/userInfo';
 
-import data from '../data.json';
+import data from '../data/data.json';
 import { Statistics } from './statistics/statistics';
 
-import friends from '../friends.json';
+import friends from '../data/friends.json';
 import { Friends } from './friends/friends'
 
-import transactions from '../transactions.json';
+import transactions from '../data/transactions.json';
 import { TransactionHistory } from './transactionHistory/transactionHistory';
 
 export const App = () => {
@@ -19,7 +19,7 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      <UserInfo username={user.username} tag={user.tag} location={user.location} avatar={user.avatar} stats={user.stats} />
+      <Profile username={user.username} tag={user.tag} location={user.location} avatar={user.avatar} followers={user.stats.followers} views={user.stats.views} likes={user.stats.likes} />
       <Statistics title="Upload stats" stats={data} />
       <Statistics stats={data} />
       <Friends friends={friends} />

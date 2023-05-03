@@ -1,44 +1,37 @@
 import css from './userInfo.module.css';
 import PropTypes from "prop-types";
 
-export const UserInfo = ({ username, tag, location, avatar, stats }) => {
+export const Profile = ({
+  username, tag, location, avatar, followers, views, likes,
+}) => {
   return (
     <div className={css.profile}>
       <div className={css.description}>
-        
-        <img src={avatar} alt="User-avatar" className={css.avatar} />
+        <img src={avatar} alt={username} className={css.avatar} />
         <p className={css.name}>{username}</p>
         <p className={css.tag}>@{tag}</p>
-        <p className={css.location}>{location}</p>
+        <p className={css.location}>{location}l</p>
       </div>
 
       <ul className={css.stats}>
-        <li className={css.stats_li}>
-            <span className={css.label}>Followers</span>
-            <div >
-          <span className={css.quantity}>{stats.followers}</span>
-         </div>
+        <li className={css.li}>
+          <span className={css.label}>Followers</span>
+          <span className={css.quantity}>{followers}</span>
         </li>
-        <li className={css.stats_li}>
-          
-            <span className={css.label}>Views</span>
-            <div>
-          <span className={css.quantity}>{stats.views}</span>
-          </div>
+        <li className={css.li}>
+          <span className={css.label}>Views</span>
+          <span className={css.quantity}>{views}</span>
         </li>
-        <li className={css.stats_li}>
-          
-            <span className={css.label}>Likes</span>
-            <div>
-          <span className={css.quantity}> {stats.likes}</span>
-          </div>
+        <li className={css.li}>
+          <span className={css.label}>Likes</span>
+          <span className={css.quantity}>{likes}</span>
         </li>
       </ul>
     </div>
   );
 };
 
-UserInfo.propTypes = {
+Profile.propTypes = {
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
